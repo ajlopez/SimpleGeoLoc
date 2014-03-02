@@ -1,7 +1,7 @@
 { "name": "simplegeoloc"
 , "description": "SimpleGeoLoc simple items with geolocation, near items function"
 , "keywords": [ "geolocation", "javascript", "longitude", "latitude" ]
-, "version": "0.0.1alpha"
+, "version": "0.0.1"
 , "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)"
 , "repository": { "type": "git", "url": "git://github.com/ajlopez/SimpleGeoLoc.git" }
 , "main": "./lib/simplegeoloc.js"

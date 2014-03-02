@@ -20,11 +20,37 @@ Reference in your program:
 var sgl = require('simplegeoloc');
 ```
 
-TBD
+Create an item store:
+```js
+var store = sgl.createStore();
+```
+
+Add items to store:
+```js
+store.add(latitude, longitude, item);
+```
+
+Examples:
+```js
+store.add(-34.47706, -58.50177, { city: 'Acassuso', geoname_id: 3436508 });
+store.add(-34.74471, -58.40410, { city: 'Banfield', geoname_id: 3436152 });
+```
+
+Items near to a point:
+```js
+var items = store.near(-34.47706, -58.50177);
+```
+The returned value is a JavaScript array. Each element has properties `latitude`, `longitude`, `item` (with the original associated item data).
 
 ## Versions
 
-TBD
+- 0.0.1 Published, naive near implementation, visiting all items, using haversine function for distances
+
+## To Do
+
+- First sample
+- Improve near implementation, partitioning items using an internal grid, then, visiting all the items in near cells instead of all the item list
+- New input format for position (latitude, longitude as strings; degree, minutes, seconds format `12° 20.736′ N, 98° 45.924′ W`, etc)
 
 ## License
 

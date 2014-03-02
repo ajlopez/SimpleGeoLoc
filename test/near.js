@@ -53,3 +53,21 @@ exports['near with one item far but in radius'] = function (test) {
     test.equal(result[0].item, item);
 };
 
+exports['near with two items, one is near'] = function (test) {
+    var store = sgl.createStore();
+    var item1 = { a: 1 };
+    var item2 = { b: 2 };
+    
+    store.add(-34.5, -10.5, item1);
+    store.add(-35.5, -11.5, item2);
+    
+    var result = store.near(-34.3,-10.1, 50);
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, 1);
+    test.equal(result[0].latitude, -34.5);
+    test.equal(result[0].longitude, -10.5);
+    test.equal(result[0].item, item1);
+};
+
