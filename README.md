@@ -38,7 +38,8 @@ MIT
 - [The Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/?csw=1)
 - [Free Geocoding Utilities at GPSVisualizer.com](http://www.gpsvisualizer.com/geocoding.html)
 - [Calculate distance between 2 GPS coordinates](http://stackoverflow.com/questions/365826/calculate-distance-between-2-gps-coordinates)
-- [Calculate distance, bearing and more between Latitude/Longitude points](http://www.movable-type.co.uk/scripts/latlong.html)
+- [Calculate distance, bearing and more between Latitude/Longitude points](http://www.movable-type.co.uk/scripts/latlong.html) See accuracy note, for error due to use medium earth radius
+- [What is the distance between a degree of latitude and longitude?](http://geography.about.com/library/faq/blqzdistancedegree.htm)
 
 ## Contribution
 
